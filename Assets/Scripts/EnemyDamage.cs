@@ -24,6 +24,8 @@ public class EnemyDamage : MonoBehaviour
 
     void OnCollisionEnter(Collision c)
     {
+        limit_dm--;
+        Debug.Log(limit_dm);
         if (limit_dm < 1)
         {
             if (c.gameObject.CompareTag("Bullet"))
@@ -31,10 +33,6 @@ public class EnemyDamage : MonoBehaviour
                 Instantiate(particle, this.transform.position, Quaternion.identity);
                 this.gameObject.SetActive(false);
             }
-        }
-        else
-        {
-            limit_dm--;
         }
     }
 }
