@@ -76,3 +76,5 @@ crashlytics-build.properties
 /[Aa]ssets/*
 !/[Aa]ssets/Project/
 !/[Aa]ssets/Scenes/
+!/[Aa]ssets/Scripts/
+!/[Aa]ssets/Prefabs/
